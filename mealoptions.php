@@ -19,30 +19,30 @@ fclose($meals);
 if ($_POST["dietarypreference"] == vegetarianonly) {
   echo "<h1>Vegetarian Options </h1>";
   echo "<b>Breakfasts:</b> <br>";
-  readmeal("meals/breakfast.txt");
+  readmeal("breakfast.txt");
   echo "<br>";
   echo "<b>Lunches: </b><br>";
-  readmeal("meals/lunch.txt");
+  readmeal("lunch.txt");
   echo "<br>";
   echo "<b>Snacks: </b><br>";
-  readmeal("meals/snack.txt");
+  readmeal("snack.txt");
   echo "<br>";
   echo "<b>Dinners: </b><br>";
-  readmeal("meals/dinner.txt");
+  readmeal("dinner.txt");
   echo "<br>";
 } elseif($_POST["dietarypreference"] == glutenfree) {
   echo "<h1>Gluten Free Options </h1>";
   echo "<b>Breakfasts: </b><br>";
-  readmeal("meals/breakfastGF.txt");
+  readmeal("breakfastGF.txt");
   echo "<br>";
   echo "<b>Lunches: </b><br>";
-  readmeal("meals/lunchGF.txt");
+  readmeal("lunchGF.txt");
   echo "<br>";
   echo "<b>Snacks: </b><br>";
-  readmeal("meals/snacksGF.txt");
+  readmeal("snacksGF.txt");
   echo "<br>";
   echo "<b>Dinners: </b><br>";
-  readmeal("meals/dinnerGF.txt");
+  readmeal("dinnerGF.txt");
   echo "<br>";
 } else {
 	//If user links to this page without linking from homepage.php
