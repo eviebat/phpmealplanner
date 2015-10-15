@@ -18,10 +18,10 @@ $menuheader = "<b>$menuheader" . "(Vegetarian)</b>";
 echo "$menuheader";
 fwrite($menufile, $menuheader);	
   foreach($days as $day) {											//Loops through each day of the days array
-   $breakfast = grabMeal("meals/breakfast.txt"); 							//Loads breakfast meal
-   $lunch = grabMeal("meals/lunch.txt");									//Loads lunch meal
-   $snack = grabMeal("meals/snack.txt");									//Loads snack meal
-   $dinner = grabMeal("meals/dinner.txt");									//Loads dinner meal
+   $breakfast = grabMeal("breakfast.txt"); 							//Loads breakfast meal
+   $lunch = grabMeal("lunch.txt");									//Loads lunch meal
+   $snack = grabMeal("snack.txt");									//Loads snack meal
+   $dinner = grabMeal("dinner.txt");									//Loads dinner meal
    $menu = "<br>$day <br>Breakfast: $breakfast<br>Lunch: $lunch
    <br>Snack: $snack<br>Dinner: $dinner<br>-----------------------------<br>"; //Creates a menu for the day
 
@@ -35,10 +35,10 @@ fwrite($menufile, $menuheader);
  echo "$menuheader";
  fwrite($menufile, $menuheader);
   foreach($days as $day) {											//Loops through each day of the days array
-   $breakfast = grabMeal("meals/breakfastGF.txt"); 							//Loads breakfast meal
-   $lunch = grabMeal("meals/lunchGF.txt");									//Loads lunch meal
-   $snack = grabMeal("meals/snacksGF.txt");									//Loads snack meal
-   $dinner = grabMeal("meals/dinnerGF.txt");									//Loads dinner meal
+   $breakfast = grabMeal("breakfastGF.txt"); 							//Loads breakfast meal
+   $lunch = grabMeal("lunchGF.txt");									//Loads lunch meal
+   $snack = grabMeal("snacksGF.txt");									//Loads snack meal
+   $dinner = grabMeal("dinnerGF.txt");									//Loads dinner meal
    $menu = "<br>$day <br>Breakfast: $breakfast<br>Lunch: $lunch
    <br>Snack: $snack<br>Dinner: $dinner<br>-----------------------------<br>"; //Creates a menu for the day
 
